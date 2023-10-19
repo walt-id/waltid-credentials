@@ -1,0 +1,66 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: vc-repository
+  namespace: vc-repository
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vc-repository
+  template:
+    metadata:
+      labels:
+        app: vc-repository
+      annotations:
+        deployment/id: "_DEFAULT_DEPLOYMENT_"
+    spec:
+      containers:
+        - name: vc-repository
+          image: waltid/vc-repository:latest
+          ports:
+            - containerPort: 3000
+              name: http-api
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: vc-repository
+  namespace: vc-repository
+spec:
+  ports:
+    - name: http
+      port: 80
+      targetPort: http-api
+      protocol: TCP
+  selector:
+    app: vc-repository
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: wallet-ingress
+  namespace: vc-repository
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    ingress.kubernetes.io/configuration-snippet: |
+      if ($host ~ ^(.+)\.waltid\.org$) {
+        return 301 https://$1.walt-test.cloud$request_uri;
+      }
+spec:
+  tls:
+    - hosts:
+        - vc-repo.walt-test.cloud
+      secretName: wallet-tls-secret
+  rules:
+    - host: vc-repo.walt-test.cloud
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: vc-repository
+                port:
+                  number: 80

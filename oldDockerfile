@@ -1,0 +1,20 @@
+# BUILD
+FROM oven/bun:canary-debian AS build
+
+COPY . /build
+
+WORKDIR /build
+RUN bun install     # nuxt build -> Building client...
+
+
+RUN bun run build   # You can preview this build using node .output/server/index.mjs
+
+# RUN
+FROM docker.io/node:20
+COPY --from=build /build/.output/ /app
+
+WORKDIR /app
+
+EXPOSE 3000
+ENTRYPOINT node server/index.mjs
+

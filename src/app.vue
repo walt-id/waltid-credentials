@@ -4,9 +4,9 @@
             <NuxtLayout class="">
                 <NuxtLoadingIndicator />
                 <NuxtErrorBoundary>
-                    <!--page
-<MonacoEditor v-model="val" :options="{readOnly: true, domReadOnly: true }" class="h-48 bg-white" lang="json"
-></MonacoEditor>-->
+                    <!--page -->
+<!--<MonacoEditor v-model="val" class="h-48 bg-white" lang="json"-->
+<!--&gt;</MonacoEditor>-->
 
 
 
