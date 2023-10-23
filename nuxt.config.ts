@@ -14,7 +14,8 @@ export default defineNuxtConfig({
 
     content: {
         highlight: {
-            theme: 'github-dark'
-        }
+            theme: 'github-dark',
+            preload: ['json', 'kotlin', 'http', 'js', 'ts', 'md', 'shell']
+        },
     }
 });
