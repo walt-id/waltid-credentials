@@ -5,10 +5,8 @@
                 <NuxtLoadingIndicator />
                 <NuxtErrorBoundary>
                     <!--page -->
-<!--<MonacoEditor v-model="val" class="h-48 bg-white" lang="json"-->
-<!--&gt;</MonacoEditor>-->
-
-
+                    <!--<MonacoEditor v-model="val" class="h-48 bg-white" lang="json"-->
+                    <!--&gt;</MonacoEditor>-->
 
                     <NuxtPage class="h-full max-w-6xl mx-auto" />
 

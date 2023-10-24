@@ -65,7 +65,7 @@
                                             </ul>
                                         </li>
 
-<!--                                        <li class="mt-auto">
+                                        <!--                                        <li class="mt-auto">
                                             <a class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white" href="#">
                                                 <Icon aria-hidden="true" class="h-6 w-6 shrink-0" name="heroicons:cog-6-tooth" />
                                                 Settings
@@ -95,9 +95,7 @@
                                     <NuxtLink v-for="link of navigation" :key="link._path" :to="link._path">
                                         <li
                                             class="group flex items-center gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
-                                            :class="[
-                                                route.path === link._path ? 'bg-gray-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-700'
-                                            ]"
+                                            :class="[route.path === link._path ? 'bg-gray-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-700']"
                                         >
                                             <div class="h-6 w-6 shrink-0">
                                                 <Icon v-if="link.icon" :name="link.icon" aria-hidden="true" class="h-6 w-6" />
@@ -109,7 +107,7 @@
                                 </ul>
                             </ContentNavigation>
                         </li>
-<!--                        <li class="mt-auto">
+                        <!--                        <li class="mt-auto">
                             <a class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white" href="#">
                                 <Icon aria-hidden="true" class="h-6 w-6 shrink-0" name="heroicons:cog-6-tooth" />
                                 Settings
@@ -157,7 +155,7 @@
 <script lang="ts" setup>
 import { Dialog, DialogPanel, TransitionChild, TransitionRoot } from "@headlessui/vue";
 
-const route = useRoute()
+const route = useRoute();
 
 const navigation = [
     { name: "Dashboard", href: "#", icon: "heroicons:home", current: true },

@@ -5,10 +5,10 @@
     "@context": ["https://www.w3.org/2018/credentials/v1"],
     "id": "did:ebsi:635ba519cd19764e84ea67dd",
     "type": [
-        "VerifiableCredential",
-        "VerifiableAttestation",
-        "VerifableId",
-        "MortgageEligibility"
+      "VerifiableCredential", 
+      "VerifiableAttestation", 
+      "VerifableId", 
+      "MortgageEligibility"
     ],
     "issuer": "did:ebsi:zhs8QaHif4mPqhEcn5Z8K9E",
     "issuanceDate": "2022-11-10T19:19:47.287Z",
