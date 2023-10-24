@@ -2,14 +2,8 @@
 
 ```json
 {
-    "@context": [
-        "https://www.w3.org/2018/credentials/v1"
-    ],
-    "type": [
-        "VerifiableCredential",
-        "VerifiableAttestation",
-        "KycChecksCredential"
-    ],
+    "@context": ["https://www.w3.org/2018/credentials/v1"],
+    "type": ["VerifiableCredential", "VerifiableAttestation", "KycChecksCredential"],
     "credentialSubject": {
         "type": "KYC",
         "result": "SUCCESS",

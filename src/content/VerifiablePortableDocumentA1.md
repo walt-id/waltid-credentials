@@ -1,14 +1,10 @@
 # VerifiablePortableDocumentA1
 
-```json 
+```json
 {
     "@context": ["https://www.w3.org/2018/credentials/v1"],
     "id": "did:ebsi:635ba519cd19764e84ea67dd",
-    "type": [
-        "VerifiableCredential",
-        "VerifiableAttestation",
-        "VerifiablePortableDocumentA1"
-    ],
+    "type": ["VerifiableCredential", "VerifiableAttestation", "VerifiablePortableDocumentA1"],
     "issuer": {
         "id": "did:key:z6MkrHKzgsahxBLyNAbLQyB1pcWNYC9GmywiWPgkrvntAZcj",
         "image": {
@@ -79,14 +75,8 @@
             }
         },
         "section5": {
-            "companyNamesAndIdNumber" : [
-                "Firma Mustermann GmbH, 12345",
-                "Company Two"
-            ],
-            "companyAddresses": [
-                "Quai de Willebroeck 35, 1000, Bruxelles, BE",
-                "second address"
-            ],
+            "companyNamesAndIdNumber": ["Firma Mustermann GmbH, 12345", "Company Two"],
+            "companyAddresses": ["Quai de Willebroeck 35, 1000, Bruxelles, BE", "second address"],
             "noFixedAddress": true
         },
         "section6": {
