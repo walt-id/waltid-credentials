@@ -17,7 +17,8 @@ export default defineNuxtConfig({
         corsHandler: {
             origin: "*",
             methods: "*"
-        }
+        },
+        rateLimiter: false
     },
 
 
