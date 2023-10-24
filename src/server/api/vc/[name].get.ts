@@ -1,5 +1,4 @@
 import { serverQueryContent } from "#content/server";
-import { ParsedContent } from "@nuxt/content/dist/runtime/types";
 
 export default defineEventHandler(async (event) => {
     const name = getRouterParam(event, 'name')
