@@ -28,5 +28,7 @@ jobs:
 #          version: "canary"
       - name: Install dependencies 👨🏻‍💻
         run: bun install
+      - name: Bundle
+        run: bun index.ts
       - name: Build
         run: bun build
