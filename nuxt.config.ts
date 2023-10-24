@@ -10,12 +10,21 @@ export default defineNuxtConfig({
         "nuxt-icon",
         "nuxt-monaco-editor",
         "@nuxt/image",
+        "nuxt-security"
     ],
+
+    security: {
+        corsHandler: {
+            origin: "*",
+            methods: "*"
+        }
+    },
+
 
     content: {
         highlight: {
-            theme: 'github-dark',
-            preload: ['json', 'kotlin', 'http', 'js', 'ts', 'md', 'shell']
-        },
+            theme: "github-dark",
+            preload: ["json", "kotlin", "http", "js", "ts", "md", "shell"]
+        }
     }
 });
