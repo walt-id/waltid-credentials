@@ -22,10 +22,10 @@
         "section1": {
             "personalIdentificationNumber": "1",
             "sex": "01",
-            "surname": "Dalton",
-            "forenames": "Joe Jack William Averell",
-            "birthName": "Default Fidelis",
-            "dateBirth": "1985-08-15",
+            "surname": "Forcher",
+            "forenames": "Joe Marvin",
+            "birthName": "Rudolf",
+            "dateBirth": "1982-08-15",
             "nationalities": ["BE"],
             "stateOfResidenceAddress": {
                 "streetNo": "sss, nnn ",
@@ -90,7 +90,7 @@
             "institutionID": "NSSIE/INASTI/RSVZ",
             "officeFaxNo": "",
             "officePhoneNo": "0800 12 018",
-            "email": "info@rsvz-inasti.fgov.be",
+            "email": "some@email.com",
             "date": "2022-10-28",
             "signature": "Official signature"
         },

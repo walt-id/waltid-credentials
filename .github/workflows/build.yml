@@ -1,0 +1,32 @@
+name: Build on every push
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest ]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Calculate release version
+        run: |
+          echo "release_version=1.$(date +'%g%m%d%H%M').$(echo ${{ github.ref_name }} | tr / -)" >> $GITHUB_ENV
+      - name: Set version
+        run: |
+          git tag v${{ env.release_version }}
+          git push --tags
+      - name: Setup bun 🏗
+        uses: oven-sh/setup-bun@v1
+#        with:
+#          version: "canary"
+      - name: Install dependencies 👨🏻‍💻
+        run: bun install
+      - name: Build
+        run: bun run build

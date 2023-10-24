@@ -44,7 +44,7 @@
                             <!-- Sidebar component, swap this element with another sidebar if you like -->
                             <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4 ring-1 ring-white/10">
                                 <div class="flex h-16 shrink-0 items-center">
-                                    <img alt="Your Company" class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" />
+                                    <img alt="VC Repository" class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" />
                                 </div>
                                 <nav class="flex flex-1 flex-col">
                                     <ul class="flex flex-1 flex-col gap-y-7" role="list">
@@ -65,12 +65,12 @@
                                             </ul>
                                         </li>
 
-                                        <li class="mt-auto">
+<!--                                        <li class="mt-auto">
                                             <a class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white" href="#">
                                                 <Icon aria-hidden="true" class="h-6 w-6 shrink-0" name="heroicons:cog-6-tooth" />
                                                 Settings
                                             </a>
-                                        </li>
+                                        </li>-->
                                     </ul>
                                 </nav>
                             </div>
@@ -85,7 +85,7 @@
             <!-- Sidebar component, swap this element with another sidebar if you like -->
             <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4">
                 <div class="flex h-16 shrink-0 items-center">
-                    <img alt="Your Company" class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" />
+                    <img alt="VC Repository" class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" />
                 </div>
                 <nav class="flex flex-1 flex-col">
                     <ul class="flex flex-1 flex-col gap-y-7" role="list">
@@ -109,12 +109,12 @@
                                 </ul>
                             </ContentNavigation>
                         </li>
-                        <li class="mt-auto">
+<!--                        <li class="mt-auto">
                             <a class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white" href="#">
                                 <Icon aria-hidden="true" class="h-6 w-6 shrink-0" name="heroicons:cog-6-tooth" />
                                 Settings
                             </a>
-                        </li>
+                        </li>-->
                     </ul>
                 </nav>
             </div>
