@@ -1,10 +1,10 @@
-# UniversityDegreeCredential
+# UniversityDegree
 
 ```json
 {
     "@context": ["https://www.w3.org/2018/credentials/v1", "https://www.w3.org/2018/credentials/examples/v1"],
     "id": "http://example.gov/credentials/3732",
-    "type": ["VerifiableCredential", "UniversityDegreeCredential"],
+    "type": ["VerifiableCredential", "UniversityDegree"],
     "issuer": {
         "id": "did:web:vc.transmute.world"
     },

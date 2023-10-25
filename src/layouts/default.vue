@@ -44,7 +44,7 @@
                             <!-- Sidebar component, swap this element with another sidebar if you like -->
                             <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4 ring-1 ring-white/10">
                                 <div class="flex h-16 shrink-0 items-center">
-                                    <img alt="VC Repository" class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" />
+                                    <img alt="VC Repository" class="h-8 w-auto" src="https://vc-repo.walt-test.cloud/logo.png" />
                                 </div>
                                 <nav class="flex flex-1 flex-col">
                                     <ul class="flex flex-1 flex-col gap-y-7" role="list">
@@ -85,7 +85,7 @@
             <!-- Sidebar component, swap this element with another sidebar if you like -->
             <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4">
                 <div class="flex h-16 shrink-0 items-center">
-                    <img alt="VC Repository" class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" />
+                    <img alt="VC Repository" class="h-8 w-auto" src="https://vc-repo.walt-test.cloud/logo.png" />
                 </div>
                 <nav class="flex flex-1 flex-col">
                     <ul class="flex flex-1 flex-col gap-y-7" role="list">

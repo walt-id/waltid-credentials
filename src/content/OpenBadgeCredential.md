@@ -5,20 +5,20 @@
 ```json
 {
     "@context": ["https://www.w3.org/2018/credentials/v1", "https://purl.imsglobal.org/spec/ob/v3p0/context.json"],
-    "id": "urn:uuid:THIS WILL BE REPLACED WITH DYNAMIC DATA FUNCTION (see below)",
+    "id": "urn:uuid:123",
     "type": ["VerifiableCredential", "OpenBadgeCredential"],
     "name": "JFF x vc-edu PlugFest 3 Interoperability",
     "issuer": {
         "type": ["Profile"],
-        "id": "did:key:THIS WILL BE REPLACED WITH DYNAMIC DATA FUNCTION FROM CONTEXT (see below)",
+        "id": "did:example:123",
         "name": "Jobs for the Future (JFF)",
         "url": "https://www.jff.org/",
         "image": "https://w3c-ccg.github.io/vc-ed/plugfest-1-2022/images/JFF_LogoLockup.png"
     },
-    "issuanceDate": "2023-07-20T07:05:44Z (THIS WILL BE REPLACED BY DYNAMIC DATA FUNCTION (see below))",
-    "expirationDate": "WILL BE MAPPED BY DYNAMIC DATA FUNCTION (see below)",
+    "issuanceDate": "2023-07-20T07:05:44Z",
+    "expirationDate": "2033-07-20T07:05:44Z",
     "credentialSubject": {
-        "id": "did:key:123 (THIS WILL BE REPLACED BY DYNAMIC DATA FUNCTION (see below))",
+        "id": "did:example:123",
         "type": ["AchievementSubject"],
         "achievement": {
             "id": "urn:uuid:ac254bd5-8fad-4bb1-9d29-efd938536926",

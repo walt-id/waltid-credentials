@@ -8,12 +8,12 @@
     "issuer": {
         "id": "did:key:z6MkrHKzgsahxBLyNAbLQyB1pcWNYC9GmywiWPgkrvntAZcj",
         "image": {
-            "id": "<url to image>",
+            "id": "https://vc-repo.walt-test.cloud/logo.png",
             "type": "Image"
         },
         "name": "CH Authority",
         "type": "Profile",
-        "url": "<url to image>"
+        "url": "https://vc-repo.walt-test.cloud/logo.png"
     },
     "issuanceDate": "2022-11-10T19:19:47.287Z",
     "validFrom": "2022-11-10T19:19:47.287Z",

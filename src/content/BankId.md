@@ -18,12 +18,12 @@
     "issuer": {
         "id": "did:key:z6MkrHKzgsahxBLyNAbLQyB1pcWNYC9GmywiWPgkrvntAZcj",
         "image": {
-            "id": "<url to image>",
+            "id": "https://vc-repo.walt-test.cloud/logo.png",
             "type": "Image"
         },
         "name": "CH Authority",
         "type": "Profile",
-        "url": "<url to image>"
+        "url": "https://vc-repo.walt-test.cloud/logo.png"
     },
     "validFrom": "2021-08-31T00:00:00Z",
     "issuanceDate": "2021-08-31T00:00:00Z"
