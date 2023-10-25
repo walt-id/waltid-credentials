@@ -150,9 +150,12 @@ dist
 .idea/
 
 *-lock.json
+*-lock.yaml
+*-lock.yml
 *.lock
 *.lockb
 .npmrc
 .prettierrc
 .eslintrc
 .output
+.run
