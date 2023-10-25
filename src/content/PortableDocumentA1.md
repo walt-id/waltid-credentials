@@ -1,4 +1,4 @@
-# VerifiablePortableDocumentA1
+# PortableDocumentA1
 
 ```json
 {
