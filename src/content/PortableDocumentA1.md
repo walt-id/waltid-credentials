@@ -4,7 +4,7 @@
 {
     "@context": ["https://www.w3.org/2018/credentials/v1"],
     "id": "did:ebsi:635ba519cd19764e84ea67dd",
-    "type": ["VerifiableCredential", "VerifiableAttestation", "VerifiablePortableDocumentA1"],
+    "type": ["VerifiableCredential", "VerifiableAttestation", "PortableDocumentA1"],
     "issuer": {
         "id": "did:key:z6MkrHKzgsahxBLyNAbLQyB1pcWNYC9GmywiWPgkrvntAZcj",
         "image": {
@@ -27,6 +27,7 @@
             "birthName": "Rudolf",
             "dateBirth": "1982-08-15",
             "nationalities": ["BE"],
+            "placeOfBirth": "Bruxelles",
             "stateOfResidenceAddress": {
                 "streetNo": "sss, nnn ",
                 "postCode": "ppp",
@@ -66,6 +67,7 @@
         "section4": {
             "employee": false,
             "selfEmployedActivity": true,
+            "employeeIdentificationNumber": "1",
             "nameBusinessName": "1",
             "registeredAddress": {
                 "streetNo": "1, 1 1",
@@ -107,5 +109,19 @@
         "type": "DocumentVerification",
         "verifier": "did:ebsi:2A9BZ9SUe6BatacSpvs1V5CdjHvLpQ7bEsi2Jb6LdHKnQxaN"
     }
+}
+```
+## Mapping example
+
+```json
+{
+    "id": "<uuid>",
+    "issuer": {
+        "id": "<issuerDid>"
+    },
+    "credentialSubject": {
+        "id": "<subjectDid>"
+    },
+    "issuanceDate": "<timestamp>"
 }
 ```

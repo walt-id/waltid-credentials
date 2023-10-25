@@ -31,13 +31,20 @@
     "credentialSchema": {
         "id": "ndid:schema:walletHolder",
         "type": "JsonSchemaValidator2018"
-    },
-    "proof": {
-        "type": "Ed25519Signature2018",
-        "created": "2023-09-14T07:21:13Z",
-        "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Jjl-M5b6pEfrLFIZycUTNd_kXTJ8HFhHvJjRVYgk0Xg7M7TQ5vTjtRMe-so8L7sgL9kzgzRrPAgKMyvvT57VBg",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:ndid:5f76f7b0-bb71-4c3a-9410-9e0a13fc51b0#keys-1"
     }
+}
+```
+## Mapping example
+
+```json
+{
+    "id": "<uuid>",
+    "issuer": {
+        "id": "<issuerDid>"
+    },
+    "credentialSubject": {
+        "id": "<subjectDid>"
+    },
+    "issuanceDate": "<timestamp>"
 }
 ```

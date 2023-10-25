@@ -29,3 +29,18 @@
     "issuanceDate": "2021-08-31T00:00:00Z"
 }
 ```
+
+## Mapping example
+
+```json
+{
+    "id": "<uuid>",
+    "issuer": {
+        "id": "<issuerDid>"
+    },
+    "credentialSubject": {
+        "id": "<subjectDid>"
+    },
+    "issuanceDate": "<timestamp>"
+}
+```

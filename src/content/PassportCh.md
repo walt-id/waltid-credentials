@@ -53,3 +53,18 @@
     }
 }
 ```
+
+## Mapping example
+
+```json
+{
+    "id": "<uuid>",
+    "issuer": {
+        "id": "<issuerDid>"
+    },
+    "credentialSubject": {
+        "id": "<subjectDid>"
+    },
+    "issuanceDate": "<timestamp>"
+}
+```

@@ -15,13 +15,20 @@
             "type": "BachelorDegree",
             "name": "Bachelor of Science and Arts"
         }
-    },
-    "proof": {
-        "type": "JsonWebSignature2020",
-        "created": "2020-03-21T17:51:48Z",
-        "verificationMethod": "did:web:vc.transmute.world#_Qq0UL2Fq651Q0Fjd6TvnYE-faHiOpRlPVQcY_-tA4A",
-        "proofPurpose": "assertionMethod",
-        "jws": "eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJhbGciOiJFZERTQSJ9..OPxskX37SK0FhmYygDk-S4csY_gNhCUgSOAaXFXDTZx86CmI5nU9xkqtLWg-f4cqkigKDdMVdtIqWAvaYx2JBA"
     }
+}
+```
+## Mapping example
+
+```json
+{
+    "id": "<uuid>",
+    "issuer": {
+        "id": "<issuerDid>"
+    },
+    "credentialSubject": {
+        "id": "<subjectDid>"
+    },
+    "issuanceDate": "<timestamp>"
 }
 ```

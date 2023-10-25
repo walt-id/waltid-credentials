@@ -75,13 +75,21 @@
     "credentialSchema": {
         "id": "ndid:schema:PND9XSchema",
         "type": "JsonSchemaValidator2018"
-    },
-    "proof": {
-        "type": "RsaSignature2018",
-        "created": "2023-09-20T03:43:37Z",
-        "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..KyZUlPSu55dXlR0yIUG72SPK_97wFZE8SfKXWRfYL3WA6VLNDz5tzKo4by8ucikdGuhqQPNtPXiwUkJ7lKAsZ1SGfVa7ZSzPfKwMu-zM4LJWE2XdSRPso4QH7OIoRnJcuhCX3k30E1X-9bI0RXHT3ifgdYRHruGohJay2rbFlb1q3oqpQz8QGAzjXe_C4tTQX0EWLldxTp-X5jDfBMDPJDr2-Py_McVzNDvYDA4tiTgPFPiSnJwaRM4YW0OTKlGDLH2mEJMTi9j2jrnh8LZoDMyyJ_v1cJArA8A_tAOLJLZ9_Y3FFVixPzD_hAfW3OQJLY-FYRavPB4WRtRVWRHo-w",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:ndid:956660dd-87ab-48c0-8e8a-dd69e3532558#keys-1"
     }
+}
+```
+
+## Mapping example
+
+```json
+{
+    "id": "<uuid>",
+    "issuer": {
+        "id": "<issuerDid>"
+    },
+    "credentialSubject": {
+        "id": "<subjectDid>"
+    },
+    "issuanceDate": "<timestamp>"
 }
 ```
