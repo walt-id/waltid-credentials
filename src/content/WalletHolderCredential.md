@@ -39,9 +39,7 @@
 ```json
 {
     "id": "<uuid>",
-    "issuer": {
-        "id": "<issuerDid>"
-    },
+    "issuer": "<issuerDid>",
     "credentialSubject": {
         "id": "<subjectDid>"
     },
