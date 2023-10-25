@@ -146,6 +146,7 @@ dist
 
 .nitro/
 .data/
+.output/
 .idea/
 
 *-lock.json
