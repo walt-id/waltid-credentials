@@ -8,12 +8,12 @@
     "issuer": {
         "id": "did:key:z6MkrHKzgsahxBLyNAbLQyB1pcWNYC9GmywiWPgkrvntAZcj",
         "image": {
-            "id": "https://vc-repo.walt-test.cloud/logo.png",
+            "id": "https://images.squarespace-cdn.com/content/v1/609c0ddf94bcc0278a7cbdb4/1660296169313-K159K9WX8J8PPJE005HV/Walt+Bot_Logo.png?format=100w",
             "type": "Image"
         },
         "name": "CH Authority",
         "type": "Profile",
-        "url": "https://vc-repo.walt-test.cloud/logo.png"
+        "url": "https://images.squarespace-cdn.com/content/v1/609c0ddf94bcc0278a7cbdb4/1660296169313-K159K9WX8J8PPJE005HV/Walt+Bot_Logo.png?format=100w"
     },
     "issuanceDate": "2022-11-10T19:19:47.287Z",
     "validFrom": "2022-11-10T19:19:47.287Z",
