@@ -24,6 +24,8 @@
         "@heroicons/vue": "^2.0.18",
         "@julr/unocss-preset-forms": "^0.0.5",
         "@nuxt/image": "rc",
-        "@unocss/reset": "^0.56.5"
+        "@unocss/reset": "^0.56.5",
+        "@vueuse/core": "^10.6.1",
+        "fetch-to-curl": "^0.6.0"
     }
 }
