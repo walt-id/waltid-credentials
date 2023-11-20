@@ -1,11 +1,6 @@
----
-navigation:
-    icon: "heroicons:home"
----
+# Getting Started
 
-# walt.id VC Repository
-
-## Use API:
+#### API
 
 ```http
 GET /api/list

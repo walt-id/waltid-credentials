@@ -1,3 +1,3 @@
 <template>
-    <hr class="mt-1 mb-1.5" />
+    <hr class="my-5 border-gray-800" />
 </template>
