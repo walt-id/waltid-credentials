@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { CheckCircleIcon, InformationCircleIcon, ExclamationTriangleIcon } from "@heroicons/vue/24/outline";
-import { computed, defineProps } from "vue";
+import { computed } from "vue";
 
 const props = defineProps({
     type: {

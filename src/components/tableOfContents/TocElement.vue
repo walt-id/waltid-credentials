@@ -11,7 +11,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from "vue";
 import { scroll } from "~/lib/navHelper/scroll";
 
 interface TableOfContentsElement {

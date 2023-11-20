@@ -1,4 +1,4 @@
-# Getting Started
+# API: Endpoints
 
 #### API
 

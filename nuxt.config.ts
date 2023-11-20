@@ -10,6 +10,7 @@ export default defineNuxtConfig({
         "nuxt-icon",
         "nuxt-monaco-editor",
         "@nuxt/image",
+        "@vueuse/nuxt",
         "nuxt-security"
     ],
 
