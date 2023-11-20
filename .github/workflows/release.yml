@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: waltid/portal:latest, waltid/portal:${{ env.release_version }}
+          tags: waltid/vc-repository:latest, waltid/vc-repository:${{ env.release_version }}
       # changelog
       - name: Changelog
         uses: ardalanamini/auto-changelog@v3
