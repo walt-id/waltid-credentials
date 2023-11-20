@@ -154,8 +154,4 @@ dist
 *-lock.yml
 *.lock
 *.lockb
-.npmrc
-.prettierrc
-.eslintrc
 .output
-.run
