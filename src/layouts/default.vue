@@ -6,7 +6,10 @@
           <div class="flex h-5 shrink-0 items-center">
             <img alt="walt.id" class="h-7 w-auto" src="/logo.png" />
           </div>
-          <span class="text-gray-50 font-bold text-2xl"> walt.id </span>
+          <div class="flex flex-col">
+            <span class="text-gray-50 font-bold text-2xl">walt.id
+              <span class="text-primary-400 text-1xl">CREDENTAILS</span></span>
+          </div>
         </div>
         <div class="flex flex-row">
           <nav>
@@ -157,6 +160,14 @@ const headerNavigation: { title: string; url: string }[] = [
   {
     title: "Homepage",
     url: "https://walt.id",
+  },
+  {
+    title: "Community",
+    url: "https://walt.id/discord"
+  },
+  {
+    title: "Docs",
+    url: "https://docs.oss.walt.id/",
   },
 ];
 </script>
