@@ -52,7 +52,7 @@ spec:
     tls:
         - hosts:
               - vc-repo.walt-test.cloud
-          secretName: wallet-tls-secret
+          secretName: credentials-tls-secret
     rules:
         - host: vc-repo.walt-test.cloud
           http:
