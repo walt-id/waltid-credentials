@@ -48,10 +48,10 @@ metadata:
 spec:
     tls:
         - hosts:
-              - vc-repo.walt-test.cloud
-          secretName: wallet-tls-secret
+              - credentials.walt.id
+          secretName: credentials-tls-secret
     rules:
-        - host: vc-repo.walt-test.cloud
+        - host: credentials.walt.id
           http:
               paths:
                   - path: /
