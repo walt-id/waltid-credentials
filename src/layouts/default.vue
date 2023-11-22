@@ -8,7 +8,7 @@
           </div>
           <div class="flex flex-col">
             <span class="text-gray-50 font-bold text-2xl">walt.id
-              <span class="text-primary-400 text-1xl">CREDENTAILS</span></span>
+              <span class="text-primary-400 text-1xl">CREDENTIALS</span></span>
           </div>
         </div>
         <div class="flex flex-row">
