@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
     const contentQuery = await serverQueryContent(event).find();
 
     const matchedContent = contentQuery.find((content) => {
-        return content.title === name;
+        return content._path?.startsWith("/credentials/") && content.title === name;
     });
 
     if (matchedContent === undefined) {
@@ -26,7 +26,7 @@ export default defineEventHandler(async (event) => {
         return `error: No credential found named: \"${name}\". Available credentials: ${n.join(", ")}`;
     }
 
-    const code = matchedContent.body.children.find((elem) => {
+    const code = matchedContent.body?.children.find((elem) => {
         return elem.tag === "pre" && elem.props?.language === "json";
     })?.props?.code;
 

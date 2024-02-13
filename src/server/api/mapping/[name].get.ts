@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
     const contentQuery = await serverQueryContent(event).find();
 
     const matchedContent = contentQuery.find((content) => {
-        return content.title === name;
+        return content._path?.startsWith("/credentials/") && content.title === name;
     });
 
     if (matchedContent === undefined) {
@@ -26,11 +26,16 @@ export default defineEventHandler(async (event) => {
         return `error: No credential found named: \"${name}\". Available credentials: ${n.join(", ")}`;
     }
 
-    console.log("MATCHED: ", matchedContent.body.children);
+    console.log("MATCHED: ", matchedContent.body?.children);
 
-    const codeblocksAndTitles = matchedContent.body.children.filter((elem) => {
+    const codeblocksAndTitles = matchedContent.body?.children.filter((elem) => {
         return (elem.tag === "pre" && elem.props?.language === "json") || elem.tag === "h2";
     });
+
+    if (!codeblocksAndTitles) {
+        setResponseStatus(event, 400);
+        return "error: no-credential";
+    }
 
     let mappingInTitle = false;
     for (const codeblockOrTitle of codeblocksAndTitles) {
