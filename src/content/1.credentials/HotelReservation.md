@@ -1,4 +1,4 @@
-# Hotel Reservation
+# HotelReservation
 
 ```json
 {

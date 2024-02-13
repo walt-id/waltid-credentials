@@ -2,7 +2,10 @@ import { serverQueryContent } from "#content/server";
 
 export default defineEventHandler(async (event) => {
     const name = getRouterParam(event, "name");
-    if (name === undefined) return "error: No name set!";
+    if (name === undefined) {
+        setResponseStatus(event, 400);
+        return "error: No name set!";
+    }
 
     const contentQuery = await serverQueryContent(event).find();
 
@@ -19,6 +22,7 @@ export default defineEventHandler(async (event) => {
                 return content.title;
             });
 
+        setResponseStatus(event, 400);
         return `error: No credential found named: \"${name}\". Available credentials: ${n.join(", ")}`;
     }
 
