@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         "@nuxt/content",
         ["@unocss/nuxt", { autoImport: false }],
         "nuxt-icon",
-        "nuxt-monaco-editor",
+        // "nuxt-monaco-editor", // not used right now
         "@nuxt/image",
         "@vueuse/nuxt",
         "nuxt-security"
@@ -27,6 +27,13 @@ export default defineNuxtConfig({
         highlight: {
             theme: "github-dark",
             preload: ["json", "kotlin", "http", "js", "ts", "md", "shell"]
+        }
+    },
+
+
+    router: {
+        options: {
+            scrollBehaviorType: "smooth"
         }
     }
 });

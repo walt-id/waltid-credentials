@@ -1,25 +1,25 @@
 <template>
-    <div class="border pt-2 pb-3 px-3">
+<!--    <div class="border pt-2 pb-3 px-3">
         <div class="px-4 sm:px-0 flex justify-between items-center">
             <h3 class="text-base leading-7 text-white">
                 <span class="text-white mr-1">HTTP:</span> <span class="font-extrabold mr-0.5">{{ method }}</span> <a :href="url">{{ url }}</a>
                 <hr />
             </h3>
-            <!--            <span class="isolate inline-flex rounded-md shadow-sm">-->
-            <!--                <button-->
-            <!--                    class="relative inline-flex items-center gap-x-1.5 rounded-l-md bg-gray-800 px-3 py-2 text-sm font-semibold text-white ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"-->
-            <!--                    type="button"-->
-            <!--                >-->
-            <!--                    <BookmarkIcon aria-hidden="true" class="-ml-0.5 h-5 w-5 text-gray-400" />-->
-            <!--                    Bookmark for your use-case-->
-            <!--                </button>-->
-            <!--                <button-->
-            <!--                    class="relative -ml-px inline-flex items-center rounded-r-md bg-gray-600 px-3 py-2 text-sm font-semibold text-gray-200 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"-->
-            <!--                    type="button"-->
-            <!--                >-->
-            <!--                    12-->
-            <!--                </button>-->
-            <!--            </span>-->
+            &lt;!&ndash;            <span class="isolate inline-flex rounded-md shadow-sm">&ndash;&gt;
+            &lt;!&ndash;                <button&ndash;&gt;
+            &lt;!&ndash;                    class="relative inline-flex items-center gap-x-1.5 rounded-l-md bg-gray-800 px-3 py-2 text-sm font-semibold text-white ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"&ndash;&gt;
+            &lt;!&ndash;                    type="button"&ndash;&gt;
+            &lt;!&ndash;                >&ndash;&gt;
+            &lt;!&ndash;                    <BookmarkIcon aria-hidden="true" class="-ml-0.5 h-5 w-5 text-gray-400" />&ndash;&gt;
+            &lt;!&ndash;                    Bookmark for your use-case&ndash;&gt;
+            &lt;!&ndash;                </button>&ndash;&gt;
+            &lt;!&ndash;                <button&ndash;&gt;
+            &lt;!&ndash;                    class="relative -ml-px inline-flex items-center rounded-r-md bg-gray-600 px-3 py-2 text-sm font-semibold text-gray-200 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"&ndash;&gt;
+            &lt;!&ndash;                    type="button"&ndash;&gt;
+            &lt;!&ndash;                >&ndash;&gt;
+            &lt;!&ndash;                    12&ndash;&gt;
+            &lt;!&ndash;                </button>&ndash;&gt;
+            &lt;!&ndash;            </span>&ndash;&gt;
         </div>
         <p v-if="description" class="max-w-2xl text-sm leading-6 text-gray-400">{{ description }}</p>
         <div class="mt-2 border-t border-white/10">
@@ -32,7 +32,7 @@
                         </span>
                     </dt>
                     <dd class="mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">
-                        <input v-bind="headerValue.value" :placeholder="headerValue.example" class="bg-gray-700 text-white px-1 w-full" />
+                        <input :placeholder="headerValue.example" class="bg-gray-700 text-white px-1 w-full" v-bind="headerValue.value" />
                     </dd>
                 </div>
                 <div v-for="[key, value] in queryParamMap" v-if="queryParamMap && queryParamMap.size >= 1" class="px-4 py-1 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -50,11 +50,11 @@
             </dl>
         </div>
 
-        <!--            v-if="body"-->
-        <!--        @update:model-value="$emit('update:modelValue', $event.target.value)"-->
+        &lt;!&ndash;            v-if="body"&ndash;&gt;
+        &lt;!&ndash;        @update:model-value="$emit('update:modelValue', $event.target.value)"&ndash;&gt;
         <div v-if="body" class="">
             Body:
-            <monaco-editor v-if="body" :model-value="bodyString" :options="{ theme: 'vs-dark', fontSize: 12 }" class="h-56 w-full" lang="json"> Loading editor... </monaco-editor>
+            <LazyMonacoEditor v-if="body" :model-value="bodyString" :options="{ theme: 'vs-dark', fontSize: 12 }" class="h-56 w-full" lang="json"> Loading editor... </LazyMonacoEditor>
         </div>
 
         <span class="flex gap-3 items-center mt-1">
@@ -76,7 +76,7 @@
         <div v-if="loading">Loading...</div>
         <div v-if="result">
             Result:
-            <monaco-editor
+            <LazyMonacoEditor
                 v-if="result"
                 :lang="resultLang"
                 :model-value="result"
@@ -86,17 +86,17 @@
                 class="h-44"
             >
                 Loading result...
-            </monaco-editor>
+            </LazyMonacoEditor>
         </div>
         <div v-if="requestSendError">
             Error:
             {{ requestSendError }}
         </div>
-    </div>
+    </div>-->
 </template>
 
 <script lang="ts" setup>
-import { Ref } from "@vue/reactivity";
+/*import { Ref } from "@vue/reactivity";
 import fetchToCurl from "fetch-to-curl";
 
 export interface Props {
@@ -179,7 +179,7 @@ async function sendRequest() {
 
         if (contentType == "application/json") {
             resultLang.value = "json";
-        } /*if (contentType == "text/plain")*/ else {
+        } /!*if (contentType == "text/plain")*!/ else {
             resultLang.value = "text";
         }
         result.value = await fetched.text();
@@ -191,12 +191,11 @@ async function sendRequest() {
 
 function toCurl() {
     //<div v-for="[headerKey, heIaderValue] in headersMap" v-if="headersMap && headersMap.size >= 1";
-    headersMap.value?.entries
-
+    headersMap.value?.entries;
 
     const fetched = fetchToCurl(props.url, {
         method: props.method,
     });
     window.alert(fetched);
-}
+}*/
 </script>

@@ -1,11 +1,11 @@
 <template>
-    <NuxtLink :href="href" :target="target" class="underline underline-primary-300 hover:underline-primary-400 font-bold text-gray-50">
+    <NuxtLink :href="href" :target="target" class="underline underline-primary-300 hover:underline-primary-400 font-bold text-gray-50 cursor-pointer">
         <slot />
     </NuxtLink>
 </template>
 
 <script lang="ts" setup>
-defineProps({
+const props = defineProps({
     href: {
         type: String,
         default: "",
@@ -15,5 +15,5 @@ defineProps({
         default: undefined,
         required: false,
     },
-});
+})
 </script>
