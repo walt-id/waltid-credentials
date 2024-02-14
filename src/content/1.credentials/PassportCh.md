@@ -22,7 +22,7 @@
     },
     "issuanceDate": "2022-11-10T19:19:47.287Z",
     "validFrom": "2022-11-10T19:19:47.287Z",
-    "expirationDate": "2022-11-10T19:19:47.287Z",
+    "expirationDate": "2032-11-10T19:19:47.287Z",
     "issued": "2022-11-10T19:19:47.287Z",
     "credentialSubject": {
         "id": "urn:uri:123",
