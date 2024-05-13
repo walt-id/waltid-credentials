@@ -1,4 +1,4 @@
-# KycDataCredential
+# KycCredential
 
 ```json
 {
