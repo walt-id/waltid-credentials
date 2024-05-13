@@ -30,6 +30,21 @@
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "Name": "$.credentialSubject.givenName",
+        "Last Name": "$.credentialSubject.familyName",
+        "Date of Birth": "$.credentialSubject.birthDate",
+        "Account ID": "$.credentialSubject.accountId",
+        "IBAN": "$.credentialSubject.IBAN",
+        "BIC": "$.credentialSubject.BIC"
+    }
+}
+```
+
 ## Mapping example
 
 ```json
