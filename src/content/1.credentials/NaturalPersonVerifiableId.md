@@ -14,7 +14,12 @@
       "familyName": "Doe", 
       "firstName": "Jane",
       "dateOfBirth":  "1985-08-15", 
-      "personalIdentifier": "c02654b4-814e-46dd-ba17-0bd81a45057c"
+      "personalIdentifier": "c02654b4-814e-46dd-ba17-0bd81a45057c",
+      "nameAndFamilyNameAtBirth": "Jane Doe",
+      "placeOfBirth": "Lille, France",
+      "currentAddress": "1 Boulevard de la Liberté, 59800 Lille",
+      "gender": "Female"
+      
   },
   "credentialSchema": {
       "id": "https://api-conformance.ebsi.eu/trusted-schemas-registry/v3/schemas/z22ZAMdQtNLwi51T2vdZXGGZaYyjrsuP1yzWyXZirCAHv",
