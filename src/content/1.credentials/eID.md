@@ -36,7 +36,7 @@
         "Date of Birth": "$.credentialSubject.dateOfBirth",
         "Gender": "$.credentialSubject.gender",
         "Nationality": "$.credentialSubject.nationality",
-        "Address": "$.credentialSubject.address",
+        "Address": "$.credentialSubject.address"
     }
 }
 ```
@@ -54,6 +54,6 @@
     },
     "issuanceDate": "<timestamp>",
     "validFrom": "<timestamp>",
-    "expirationDate": "<timestamp-in:365d>",
+    "expirationDate": "<timestamp-in:365d>"
 }
 ```

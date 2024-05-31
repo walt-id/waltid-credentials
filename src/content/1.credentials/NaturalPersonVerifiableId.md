@@ -19,12 +19,28 @@
       "placeOfBirth": "Lille, France",
       "currentAddress": "1 Boulevard de la Liberté, 59800 Lille",
       "gender": "Female"
-      
   },
   "credentialSchema": {
       "id": "https://api-conformance.ebsi.eu/trusted-schemas-registry/v3/schemas/z22ZAMdQtNLwi51T2vdZXGGZaYyjrsuP1yzWyXZirCAHv",
       "type": "FullJsonSchemaValidator2021"
-  },
+  }
+}
+```
+
+## Manifest
+
+```json
+{
+    "claims": {
+        "Name": "$.credentialSubject.firstName",
+        "Last Name": "$.credentialSubject.familyName",
+        "Date of Birth": "$.credentialSubject.dateOfBirth",
+        "Gender": "$.credentialSubject.gender",
+        "Personal Identifier": "$.credentialSubject.personalIdentifier",
+        "Name and Family Name at Birth": "$.credentialSubject.nameAndFamilyNameAtBirth",
+        "Place of Birth": "$.credentialSubject.placeOfBirth",
+        "Current Address": "$.credentialSubject.currentAddress"
+    }
 }
 ```
 

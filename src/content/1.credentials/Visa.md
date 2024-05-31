@@ -64,6 +64,6 @@
     },
     "issuanceDate": "<timestamp>",
     "validFrom": "<timestamp>",
-    "expirationDate": "<timestamp-in:365d>",
+    "expirationDate": "<timestamp-in:365d>"
 }
 ```
