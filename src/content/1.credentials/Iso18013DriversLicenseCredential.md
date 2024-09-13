@@ -73,6 +73,7 @@ This specification describes an experimental vocabulary for expressing a Verifia
     "credentialSubject": {
         "id": "<subjectDid>"
     },
-    "issuanceDate": "<timestamp>"
+    "issuanceDate": "<timestamp>",
+    "expirationDate": "<timestamp-in:365d>"
 }
 ```
