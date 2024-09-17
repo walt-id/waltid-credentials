@@ -23,7 +23,7 @@
     "id": "did:web:string",
     "name": "Alp Tour"
   },
-  "validFrom": "2024-04-31T00:00:00Z",
+  "validFrom": "2024-05-31T00:00:00Z",
   "expirationDate": "2024-05-31T00:00:00Z",
   "issuanceDate": "2024-03-31T00:00:00Z"
 }
