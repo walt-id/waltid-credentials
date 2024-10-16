@@ -1,4 +1,4 @@
-# identity_credential
+# IdentityCredential
 
 ```json
 {
