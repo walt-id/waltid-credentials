@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
     name: vc-repository-dev
-    namespace: vc-repository
+    namespace: test-identity-main
 spec:
     replicas: 1
     selector:
@@ -26,7 +26,7 @@ kind: Service
 apiVersion: v1
 metadata:
     name: vc-repository-dev
-    namespace: vc-repository
+    namespace: test-identity-main
 spec:
     ports:
         - name: http
@@ -40,7 +40,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
     name: wallet-dev-ingress
-    namespace: vc-repository
+    namespace: test-identity-main
     annotations:
         kubernetes.io/ingress.class: "nginx"
         cert-manager.io/cluster-issuer: letsencrypt-prod
@@ -49,12 +49,8 @@ metadata:
               return 301 https://$1.walt-test.cloud$request_uri;
             }
 spec:
-    tls:
-        - hosts:
-              - vc-repo.walt-test.cloud
-          secretName: credentials-dev-tls-secret
     rules:
-        - host: vc-repo.walt-test.cloud
+        - host: credentials.test.waltid.cloud
           http:
               paths:
                   - path: /
