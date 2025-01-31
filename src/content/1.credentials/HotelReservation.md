@@ -7,7 +7,7 @@
   ],
   "type": [
     "VerifiableCredential",
-    "VerifiableHotelReservation"
+    "HotelReservation"
   ],
   "credentialSchema": {
     "id": "https://insert-link",

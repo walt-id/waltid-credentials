@@ -7,7 +7,7 @@
   ],
   "type": [
     "VerifiableCredential",
-    "VerifiableTaxReceipt"
+    "TaxReceipt"
   ],
   "credentialSchema": {
     "id": "https://insert-link",

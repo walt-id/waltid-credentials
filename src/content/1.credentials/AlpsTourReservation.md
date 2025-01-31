@@ -7,7 +7,7 @@
   ],
   "type": [
     "VerifiableCredential",
-    "VerifiableAlpsTourReservation"
+    "AlpsTourReservation"
   ],
   "credentialSchema": {
     "id": "https://insert-link",
