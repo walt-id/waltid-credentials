@@ -49,6 +49,10 @@ metadata:
               return 301 https://$1.walt-test.cloud$request_uri;
             }
 spec:
+    tls:
+        - hosts:
+              - credentials.test.waltid.cloud
+          secretName: credentials-tls-secret
     rules:
         - host: credentials.test.waltid.cloud
           http:
