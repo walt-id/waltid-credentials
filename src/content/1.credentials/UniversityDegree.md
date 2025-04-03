@@ -18,6 +18,19 @@
     }
 }
 ```
+
+## Manifest
+
+```json
+{
+    "claims": {
+        "Credential Subject ID": "$.credentialSubject.id",
+        "Degree Type": "$.credentialSubject.degree.type",
+        "Degree Name": "$.credentialSubject.degree.name"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

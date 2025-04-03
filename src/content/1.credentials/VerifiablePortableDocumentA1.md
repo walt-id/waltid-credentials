@@ -92,6 +92,44 @@
     }
 }
 ```
+
+## Manifest
+
+```json
+{
+    "claims": {
+        "Credential Subject ID": "$.credentialSubject.id",
+        "Personal Identification Number": "$.credentialSubject.section1.personalIdentificationNumber",
+        "Sex": "$.credentialSubject.section1.sex",
+        "Surname": "$.credentialSubject.section1.surname",
+        "Forenames": "$.credentialSubject.section1.forenames",
+        "Date of Birth": "$.credentialSubject.section1.dateBirth",
+        "Nationalities": "$.credentialSubject.section1.nationalities[0]",
+        "State of Residence Address": "$.credentialSubject.section1.stateOfResidenceAddress",
+        "State of Stay Address": "$.credentialSubject.section1.stateOfStayAddress",
+        "Member State Legislation Applies": "$.credentialSubject.section2.memberStateWhichLegislationApplies",
+        "Starting Date": "$.credentialSubject.section2.startingDate",
+        "Ending Date": "$.credentialSubject.section2.endingDate",
+        "Certificate for Duration of Activity": "$.credentialSubject.section2.certificateForDurationActivity",
+        "Posted Self-Employed Person": "$.credentialSubject.section3.postedSelfEmployedPerson",
+        "Self-Employed in Two or More States": "$.credentialSubject.section3.selfEmployedTwoOrMoreStates",
+        "Civil Servant": "$.credentialSubject.section3.civilServant",
+        "Civil and Employed Self-Employed": "$.credentialSubject.section3.civilAndEmployedSelfEmployed",
+        "Self-Employed Activity": "$.credentialSubject.section4.selfEmployedActivity",
+        "Business Name": "$.credentialSubject.section4.nameBusinessName",
+        "Registered Address": "$.credentialSubject.section4.registeredAddress",
+        "No Fixed Address": "$.credentialSubject.section5.noFixedAddress",
+        "Institution Name": "$.credentialSubject.section6.name",
+        "Institution Address": "$.credentialSubject.section6.address",
+        "Institution ID": "$.credentialSubject.section6.institutionID",
+        "Office Phone Number": "$.credentialSubject.section6.officePhoneNo",
+        "Email": "$.credentialSubject.section6.email",
+        "Date": "$.credentialSubject.section6.date",
+        "Signature": "$.credentialSubject.section6.signature"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

@@ -29,6 +29,16 @@
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "Booking ID": "$.credentialSubject.bookingId"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

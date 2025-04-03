@@ -44,6 +44,17 @@
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "Receipt ID": "$.credentialSubject.ReceiptId",
+        "VAT": "$.credentialSubject.VAT"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

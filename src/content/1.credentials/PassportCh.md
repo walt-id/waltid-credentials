@@ -54,6 +54,29 @@
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "Family Name": "$.credentialSubject.familyName",
+        "Given Name": "$.credentialSubject.givenName",
+        "Birth Name": "$.credentialSubject.birthName",
+        "Date of Birth": "$.credentialSubject.dateOfBirth",
+        "Place of Birth": "$.credentialSubject.placeOfBirth",
+        "Residence": "$.credentialSubject.residence",
+        "Canton": "$.credentialSubject.canton",
+        "Address": "$.credentialSubject.address",
+        "Passport Number": "$.credentialSubject.passportNumber",
+        "Height": "$.credentialSubject.height",
+        "Gender": "$.credentialSubject.gender",
+        "Authority": "$.credentialSubject.authority",
+        "Nationality": "$.credentialSubject.nationality",
+        "Country Code": "$.credentialSubject.countryCode"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

@@ -38,6 +38,18 @@
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "Achievement Name": "$.credentialSubject.achievement.name",
+        "Achievement Description": "$.credentialSubject.achievement.description",
+        "Criteria Narrative": "$.credentialSubject.achievement.criteria.narrative"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

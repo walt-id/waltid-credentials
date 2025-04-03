@@ -79,6 +79,16 @@
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "ID": "$.credentialSubject.id"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

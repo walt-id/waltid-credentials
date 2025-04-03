@@ -63,6 +63,22 @@ This specification describes an experimental vocabulary for expressing a Verifia
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "Document Number": "$.credentialSubject.driversLicense.document_number",
+        "Family Name": "$.credentialSubject.driversLicense.family_name",
+        "Given Name": "$.credentialSubject.driversLicense.given_name",
+        "Birth Date": "$.credentialSubject.driversLicense.birth_date",
+        "Issuing Country": "$.credentialSubject.driversLicense.issuing_country",
+        "Issuing Authority": "$.credentialSubject.driversLicense.issuing_authority",
+        "Driving Privileges (Vehicle Code)": "$.credentialSubject.driversLicense.driving_privileges[0].vehicle_category_code"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

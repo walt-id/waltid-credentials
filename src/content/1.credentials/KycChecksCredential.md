@@ -50,6 +50,24 @@
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "Type": "$.credentialSubject.type",
+        "Overall Result": "$.credentialSubject.result",
+        "KYC Date": "$.credentialSubject.date",
+        "PEP Check Result": "$.credentialSubject.checks[0].result",
+        "PEP Check Date": "$.credentialSubject.checks[0].date",
+        "AML Check Result": "$.credentialSubject.checks[1].result",
+        "AML Check Date": "$.credentialSubject.checks[1].date",
+        "KYC Check Result": "$.credentialSubject.checks[2].result",
+        "KYC Check Date": "$.credentialSubject.checks[2].date"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

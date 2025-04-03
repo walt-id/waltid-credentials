@@ -54,6 +54,23 @@
   }
 }
 ```
+
+## Manifest
+
+```json
+{
+    "claims": {
+        "First Name": "$.credentialSubject.firstName",
+        "Family Name": "$.credentialSubject.familyName",
+        "Date of Birth": "$.credentialSubject.dateOfBirth",
+        "Email": "$.credentialSubject.mail",
+        "Primary Affiliation": "$.credentialSubject.eduPersonPrimaryAffiliation",
+        "Personal Unique ID": "$.credentialSubject.schacPersonalUniqueID",
+        "Primary Affiliation": "$.credentialSubject.eduPersonPrimaryAffiliation"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

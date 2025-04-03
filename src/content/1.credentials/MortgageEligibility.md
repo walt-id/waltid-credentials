@@ -31,6 +31,24 @@
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "Family Name": "$.credentialSubject.familyName",
+        "First Name": "$.credentialSubject.firstName",
+        "Email Address": "$.credentialSubject.emailAddress",
+        "Date of Birth": "$.credentialSubject.dateOfBirth",
+        "Purchase Price": "$.credentialSubject.purchasePrice",
+        "Total Income": "$.credentialSubject.totalIncome",
+        "Mortgage Amount": "$.credentialSubject.mortgageAmount",
+        "Additional Collateral": "$.credentialSubject.additionalCollateral",
+        "Post Code Property": "$.credentialSubject.postCodeProperty"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

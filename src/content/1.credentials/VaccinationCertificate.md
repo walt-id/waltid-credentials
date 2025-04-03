@@ -69,6 +69,32 @@
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "Credential Subject ID": "$.credentialSubject.id",
+        "Date of Birth": "$.credentialSubject.dateOfBirth",
+        "Family Name": "$.credentialSubject.familyName",
+        "Given Names": "$.credentialSubject.givenNames",
+        "Person Identifier": "$.credentialSubject.personIdentifier",
+        "Unique Certificate Identifier": "$.credentialSubject.uniqueCertificateIdentifier",
+        "Administering Centre": "$.credentialSubject.vaccinationProphylaxisInformation[0].administeringCentre",
+        "Batch Number": "$.credentialSubject.vaccinationProphylaxisInformation[0].batchNumber",
+        "Country of Vaccination": "$.credentialSubject.vaccinationProphylaxisInformation[0].countryOfVaccination",
+        "Date of Vaccination": "$.credentialSubject.vaccinationProphylaxisInformation[0].dateOfVaccination",
+        "Disease or Agent Targeted": "$.credentialSubject.vaccinationProphylaxisInformation[0].diseaseOrAgentTargeted.code",
+        "Dose Number": "$.credentialSubject.vaccinationProphylaxisInformation[0].doseNumber",
+        "Marketing Authorization Holder": "$.credentialSubject.vaccinationProphylaxisInformation[0].marketingAuthorizationHolder",
+        "Next Vaccination Date": "$.credentialSubject.vaccinationProphylaxisInformation[0].nextVaccinationDate",
+        "Total Series of Doses": "$.credentialSubject.vaccinationProphylaxisInformation[0].totalSeriesOfDoses",
+        "Vaccine Medicinal Product": "$.credentialSubject.vaccinationProphylaxisInformation[0].vaccineMedicinalProduct",
+        "Vaccine or Prophylaxis": "$.credentialSubject.vaccinationProphylaxisInformation[0].vaccineOrProphylaxis"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

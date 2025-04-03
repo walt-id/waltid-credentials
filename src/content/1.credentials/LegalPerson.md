@@ -29,7 +29,18 @@
 }
 ```
 
-## Mapping example
+## Manifest
+
+```json
+{
+    "claims": {
+        "Legal Name": "$.credentialSubject['gx:legalName']",
+        "Legal Registration Number": "$.credentialSubject['gx:legalRegistrationNumber'].id",
+        "Headquarter Address Country Subdivision": "$.credentialSubject['gx:headquarterAddress']['gx:countrySubdivisionCode']",
+        "Legal Address Country Subdivision": "$.credentialSubject['gx:legalAddress']['gx:countrySubdivisionCode']"
+    }
+}
+```
 
 ## Mapping example
 

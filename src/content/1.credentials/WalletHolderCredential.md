@@ -34,6 +34,28 @@
     }
 }
 ```
+
+## Manifest
+
+```json
+{
+    "claims": {
+        "Credential Subject ID": "$.credentialSubject.id",
+        "First Name": "$.credentialSubject.walletHolderCredential.firstName",
+        "Last Name": "$.credentialSubject.walletHolderCredential.lastName",
+        "Address": "$.credentialSubject.walletHolderCredential.address",
+        "Identifier": "$.credentialSubject.walletHolderCredential.identifier",
+        "Namespace": "$.credentialSubject.walletHolderCredential.namespace",
+        "Service ID": "$.credentialSubject.walletHolderCredential.serviceID",
+        "Request ID": "$.credentialSubject.walletHolderCredential.requestID",
+        "Request Message": "$.credentialSubject.walletHolderCredential.requestMessage",
+        "AAL (Authentication Assurance Level)": "$.credentialSubject.walletHolderCredential.aal",
+        "IAL (Identity Assurance Level)": "$.credentialSubject.walletHolderCredential.ial",
+        "IDP": "$.credentialSubject.walletHolderCredential.idp"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

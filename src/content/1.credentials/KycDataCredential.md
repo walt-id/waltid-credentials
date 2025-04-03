@@ -55,6 +55,30 @@
 }
 ```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "First Name": "$.credentialSubject.userData.firstName",
+        "Family Name": "$.credentialSubject.userData.familyName",
+        "Date of Birth": "$.credentialSubject.userData.dateOfBirth",
+        "Document Type": "$.credentialSubject.identificationdocument.type",
+        "Document Country": "$.credentialSubject.identificationdocument.country",
+        "Document Valid Until": "$.credentialSubject.identificationdocument.validuntil",
+        "Document Number": "$.credentialSubject.identificationdocument.number",
+        "Document Date Issued": "$.credentialSubject.identificationdocument.dateissued",
+        "Identification Agent Name": "$.credentialSubject.identificationprocess.agentname",
+        "Identification Company ID": "$.credentialSubject.identificationprocess.companyId",
+        "Identification Result": "$.credentialSubject.identificationprocess.result",
+        "Identification Time": "$.credentialSubject.identificationprocess.identificationTime",
+        "Identification ID": "$.credentialSubject.identificationprocess.identificationId",
+        "Identification Transaction Number": "$.credentialSubject.identificationprocess.transactionNumber",
+        "Identification Type": "$.credentialSubject.identificationprocess.type"
+    }
+}
+```
+
 ## Mapping example
 
 ```json

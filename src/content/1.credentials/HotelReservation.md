@@ -32,7 +32,20 @@
   "validFrom": "2024-01-31T00:00:00Z",
   "issuanceDate": "2024-01-31T00:00:00Z"
 }
+```
 
+## Manifest
+
+```json
+{
+    "claims": {
+        "First Name": "$.credentialSubject.firstName",
+        "Family Name": "$.credentialSubject.familyName",
+        "Current Address": "$.credentialSubject.currentAddress[0]",
+        "Date of Birth": "$.credentialSubject.dateOfBirth",
+        "Place of Birth": "$.credentialSubject.placeOfBirth"
+    }
+}
 ```
 
 ## Mapping example
