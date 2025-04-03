@@ -24,7 +24,7 @@
 ```json
 {
     "claims": {
-        "Gaia-X Terms and Conditions": "$.credentialSubject.gx:termsAndConditions"
+        "Gaia-X Terms and Conditions": "$.credentialSubject['gx:termsAndConditions']"
     }
 }
 ```

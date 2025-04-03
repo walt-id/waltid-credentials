@@ -36,8 +36,8 @@
 {
     "claims": {
         "Legal Registration Number": "$.credentialSubject.id",
-        "LEI Code": "$.credentialSubject.gx:leiCode",
-        "LEI Country Code": "$.credentialSubject.gx:leiCode-countryCode"
+        "LEI Code": "$.credentialSubject['gx:leiCode']",
+        "LEI Country Code": "$.credentialSubject['gx:leiCode-countryCode']"
     }
 }
 ```
