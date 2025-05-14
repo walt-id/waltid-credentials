@@ -54,7 +54,7 @@
         "Start Date": "$.credentialSubject.startDate",
         "Expected Graduation Date": "$.credentialSubject.expectedGraduationDate",
         "Academic Year": "$.credentialSubject.academicYear",
-        "Current Semester": "$.credentialSubject.currentSemester",
+        "Current Semester": "$.credentialSubject.currentSemester"
     }
 }
 ```
@@ -70,6 +70,6 @@
     "credentialSubject": {
         "id": "<subjectDid>"
     },
-    "issuanceDate": "<timestamp>",
+    "issuanceDate": "<timestamp>"
 }
 ```
