@@ -45,18 +45,18 @@
 
 ```json
 {
-  "image": "$.credentialSubject.kiwiAccessCard.portrait",
+  "image": "$.credentialSubject.portrait",
   "claims": {
-    "Card Number": "$.credentialSubject.kiwiAccessCard.card_number",
-    "Full Name": "$.credentialSubject.kiwiAccessCard.full_name",
-    "Birth Date": "$.credentialSubject.kiwiAccessCard.birth_date",
-    "Sex": "$.credentialSubject.kiwiAccessCard.sex",
-    "Issuing Country": "$.credentialSubject.kiwiAccessCard.issuing_country",
-    "Issuing Authority": "$.credentialSubject.kiwiAccessCard.issuing_authority",
-    "Age Over 18": "$.credentialSubject.kiwiAccessCard.age_over_18",
-    "Age Over 21": "$.credentialSubject.kiwiAccessCard.age_over_21",
-    "Age Over 25": "$.credentialSubject.kiwiAccessCard.age_over_25",
-    "Age Over 60": "$.credentialSubject.kiwiAccessCard.age_over_60"
+    "Card Number": "$.credentialSubject.card_number",
+    "Full Name": "$.credentialSubject.full_name",
+    "Birth Date": "$.credentialSubject.birth_date",
+    "Sex": "$.credentialSubject.sex",
+    "Issuing Country": "$.credentialSubject.issuing_country",
+    "Issuing Authority": "$.credentialSubject.issuing_authority",
+    "Age Over 18": "$.credentialSubject.age_over_18",
+    "Age Over 21": "$.credentialSubject.age_over_21",
+    "Age Over 25": "$.credentialSubject.age_over_25",
+    "Age Over 60": "$.credentialSubject.age_over_60"
   }
 }
 ```
