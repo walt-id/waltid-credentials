@@ -23,6 +23,7 @@
     "@julr/unocss-preset-forms": "^0.1.0",
     "@nuxt/image": "rc",
     "@unocss/reset": "^0.58.5",
-    "@vueuse/nuxt": "^10.7.2"
+    "@vueuse/nuxt": "^10.7.2",
+    "better-sqlite3": "^12.2.0"
   }
 }
