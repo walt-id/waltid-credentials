@@ -15,15 +15,15 @@
   "validUntil": "2026-08-11T23:59:59Z",
   "credentialSubject": {
     "id": "did:example:john-doe-123",
-    "firstName": "REPLACE_ME",
-    "lastName": "REPLACE_ME",
+    "firstName": "John",
+    "lastName": "Doe",
     "address": {
-      "country": "REPLACE_ME",
-      "countryCode": "REPLACE_ME",
-      "streetAddress": "REPLACE_ME",
-      "apartmentOrSuite": "REPLACE_ME",
-      "postalCode": "REPLACE_ME",
-      "city": "REPLACE_ME"
+      "country": "Austria",
+      "countryCode": "AT",
+      "streetAddress": "Landstraßer Hauptstraße 12",
+      "apartmentOrSuite": "Top 7",
+      "postalCode": "1030",
+      "city": "Wien"
     }
   }
 }

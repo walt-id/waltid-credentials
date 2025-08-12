@@ -14,30 +14,30 @@
   "validFrom": "2025-08-12T10:00:00Z",
   "credentialSubject": {
     "id": "did:example:john-doe-123",
-    "fullName": "REPLACE_ME",
-    "givenName": "REPLACE_ME",
-    "familyName": "REPLACE_ME",
-    "nationality": "REPLACE_ME",
+    "fullName": "John Doe",
+    "givenName": "John",
+    "familyName": "Doe",
+    "nationality": "AUT",
     "residency": {
-      "country": "REPLACE_ME",
-      "countryCode": "REPLACE_ME",
-      "city": "REPLACE_ME"
+      "country": "Austria",
+      "countryCode": "AT",
+      "city": "Wien"
     },
-    "passportNumber": "REPLACE_ME",
-    "issuingCountry": "REPLACE_ME",
-    "dateOfBirth": "REPLACE_ME",
-    "authority": "REPLACE_ME",
-    "sex": "REPLACE_ME",
+    "passportNumber": "P12345678",
+    "issuingCountry": "AUT",
+    "dateOfBirth": "1990-04-15",
+    "authority": "Wien",
+    "sex": "M",
     "placeOfBirth": {
-      "country": "REPLACE_ME",
-      "city": "REPLACE_ME"
+      "country": "Austria",
+      "city": "Graz"
     },
-    "type": "REPLACE_ME",
-    "code": "REPLACE_ME",
-    "height": "REPLACE_ME",
-    "eyeColor": "REPLACE_ME",
-    "issuanceDate": "REPLACE_ME",
-    "expirationDate": "REPLACE_ME"
+    "type": "P",
+    "code": "AUT",
+    "height": "182 cm",
+    "eyeColor": "Brown",
+    "issuanceDate": "2021-06-15",
+    "expirationDate": "2031-06-15"
   }
 }
 ```
