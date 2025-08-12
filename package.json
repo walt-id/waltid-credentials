@@ -9,21 +9,21 @@
   },
   "devDependencies": {
     "@nuxt/content": "^3.6.3",
-    "@nuxt/devtools": "^1.7.0",
+    "@nuxt/devtools": "^2.6.2",
     "@unocss/nuxt": "^66.4.2",
-    "nuxt": "^3.10.1",
-    "nuxt-icon": "^0.6.8",
-    "nuxt-security": "2.0.0-rc.9",
-    "tailwindcss": "^3.4.1",
-    "vue-router": "^4.2.5"
+    "nuxt": "3.17.7",
+    "nuxt-icon": "^1.0.0-beta.7",
+    "nuxt-security": "2.3.0",
+    "tailwindcss": "^4.1.11",
+    "vue-router": "^4.5.1"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.19",
-    "@heroicons/vue": "^2.1.1",
-    "@julr/unocss-preset-forms": "^0.1.0",
-    "@nuxt/image": "rc",
-    "@unocss/reset": "^0.58.5",
-    "@vueuse/nuxt": "^10.7.2",
+    "@headlessui/vue": "^1.7.23",
+    "@heroicons/vue": "^2.2.0",
+    "@julr/unocss-preset-forms": "^2.0.0",
+    "@nuxt/image": "^1.11.0",
+    "@unocss/reset": "^66.4.2",
+    "@vueuse/nuxt": "^13.6.0",
     "better-sqlite3": "^12.2.0"
   }
 }
