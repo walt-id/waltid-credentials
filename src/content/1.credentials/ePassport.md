@@ -1,4 +1,4 @@
-# ePassportCredential
+# ePassport
 
 ```json
 {
@@ -8,7 +8,7 @@
   "id": "urn:uuid:6c5f1f91-5c3a-4f4a-94a0-8b2a9cfc9b11",
   "type": [
     "VerifiableCredential",
-    "ePassportCredential"
+    "ePassport"
   ],
   "issuer": "did:example:gov-at",
   "validFrom": "2025-08-12T10:00:00Z",

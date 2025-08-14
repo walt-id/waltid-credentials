@@ -1,4 +1,4 @@
-# ProofOfAddressCredential
+# ProofOfAddress
 
 ```json
 {
@@ -8,7 +8,7 @@
   "id": "urn:uuid:3b2a1f74-9c5a-4a3a-8d3f-7b9c2e5d4f10",
   "type": [
     "VerifiableCredential",
-    "ProofOfAddressCredential"
+    "ProofOfAddress"
   ],
   "issuer": "did:example:utility-at",
   "validFrom": "2025-08-12T10:00:00Z",
