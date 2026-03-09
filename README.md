@@ -1,3 +1,6 @@
+
+# Moved to: https://github.com/walt-id/waltid-identity/tree/main/waltid-applications/waltid-credentials
+--------------------------
 # walt.id Credentials
 
 A collection of W3C Verifiable Credential conform data schemas
